@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="@string/enter_value"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints=""
+        android:importantForAutofill="no" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="138dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/unit1"
+        android:layout_width="89dp"
+        android:layout_height="35dp"
+        android:gravity="center_vertical|start"
+        android:text="@string/TextView"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <TextView
+        android:id="@+id/value1"
+        android:layout_width="159dp"
+        android:layout_height="37dp"
+        android:gravity="center_vertical|end"
+        android:text="@string/TextView"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/unit1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/unit2"
+        android:layout_width="89dp"
+        android:layout_height="35dp"
+        android:gravity="center_vertical|start"
+        android:text="@string/TextView"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442" />
+
+    <TextView
+        android:id="@+id/value2"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:gravity="center_vertical|end"
+        android:text="@string/TextView"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/unit2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/value3"
+        android:layout_width="155dp"
+        android:layout_height="34dp"
+        android:gravity="center_vertical|end"
+        android:text="@string/TextView"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.596" />
+
+    <TextView
+        android:id="@+id/unit3"
+        android:layout_width="92dp"
+        android:layout_height="36dp"
+        android:gravity="center_vertical|start"
+        android:text="@string/TextView"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBaseline_toBaselineOf="@+id/value3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/lengthView"
+        android:layout_width="97dp"
+        android:layout_height="93dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/meter"
+        android:contentDescription="@string/length" />
+
+    <ImageView
+        android:id="@+id/tempView"
+        android:layout_width="101dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/weightView"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toEndOf="@+id/lengthView"
+        app:srcCompat="@drawable/temp"
+        android:contentDescription="@string/temperature" />
+
+    <ImageView
+        android:id="@+id/weightView"
+        android:layout_width="99dp"
+        android:layout_height="94dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/kilo"
+        android:contentDescription="@string/weight" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
